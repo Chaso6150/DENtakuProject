@@ -1,251 +1,268 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>単位計算システムDENtaku</title>
-    <script type="text/javascript" src="main.js"></script>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta name="keywords" content="" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link rel="apple-touch-icon" href="/asset/common/webclip.png" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-      <h1>EE向け単位計算システムDENtaku</h1>
-      <h2>●使い方●</h2>
-      <h3>
-        ・取得済みの単位をクリックする。
-      </h3>
-      <h3>
-        ・間違えたらもう一回クリックする。
-      </h3>
-      <h3>
-        ・表から残りの単位を確認する。
-      </h3>
-      <table border="1">
-        <tr>
-          <th>科目区分</th>
-          <th>必要単位</th>
-          <th>取得単位</th>
-          <th>残りの単位数</th>
-        </tr>
-        <tr>
-          <td>必修英語</td>
-          <td>4</td>
-          <td id="count1">0</td>
-          <td id="count_n1">4</td>
-        </tr>
-        <tr>
-          <td>新セミ</td>
-          <td>1</td>
-          <td id="count2">0</td>
-          <td id="count_n2">1</td>
-        </tr>
-        <tr>
-          <td>情報処理</td>
-          <td>2</td>
-          <td id="count3">0</td>
-          <td id="count_n3">2</td>
-        </tr>
-        <tr>
-          <td>フィールドワーク</td>
-          <td>2</td>
-          <td id="count4">0</td>
-          <td id="count_n4">2</td>
-        </tr>
-        <tr>
-          <td>キャリデザ</td>
-          <td>1</td>
-          <td id="count5">0</td>
-          <td id="count_n5">1</td>
-        </tr>
-        <tr>
-        <td>個別分野(人文)</td>
-        <td>8</td>
-        <td id="count6">0</td>
-        <td id="count_n6">8</td>
-      </tr>
-      <tr>
-        <td>学際(地域)</td>
-        <td>2</td>
-        <td id="count7">0</td>
-        <td id="count_n7">2</td>
-      </tr>
-        <tr>
-          <td>教養選択</td>
-          <td>6</td>
-          <td id="count8">0</td>
-          <td id="count_n8">6</td>
-          </tr>
-          <tr>
-            <td>専門科目</td>
-            <td>98</td>
-            <td id="count9">0</td>
-            <td id="count_n9">98</td>
-          </tr>
-      </table>
-      <header></header>
-      <main>
-      <section>
-        <div class="sectionWrapper chart">
-          <ul>
-            <li>
-              <button>理系基礎科目</button>
-              <ul>
-                <li>
-                  <button id="id_1">工学基礎科学Ⅰ</button>
-                  <ul>
-                    <li>
-                      <button id="id_2">工学基礎科学Ⅱ</button>
-                      <ul>
-                        <li><button>対象教科無し</button>
-                          <ul>
-                            <li><button id="id_3">熱統計力学</button>
-                              <ul>
-                                <li><button id="id_4">インターンシップ</button>
-                                  <ul>
-                                    <li><button id="id_5">インターンシップ</button>
-                                      <li><button id="id_6">電気電子英語</button>
-                                        <ul>
-                                          <li><button id="id_7">技術者倫理</button>
-                                         </li>
-                                          <li><button id="id_8">経営システム工学</button>
-                                          </li>
-                                          <li>
-                                            <button id="id_9">技術とマネジメント</button>
-                                          </li>
-                                          <li>
-                                            <button id="id_10">安全工学</button>
-                                          </li>
-                                        </ul>
-                                      </li>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <button id="id_11">微分積分学Ⅰ</button>
-                  <ul>
-                    <li><button id="id_12">微分積分学Ⅱ</button></li>
-                  </ul>
-                </li>
-                <li>
-                  <button id="id_13">線形代数学Ⅰ</button>
-                  <ul>
-                    <li>
-                      <button id="id_14">線形代数学Ⅱ</button>
-                      <ul>
-                        <li><button id="id_15">応用数学Ⅰ</button>
+
+<head>
+  <meta charset="utf-8" />
+  <title>単位計算システムDENtaku</title>
+  <script type="text/javascript" src="main.js"></script>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/asset/common/webclip.png" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1 class="title-underline">EE向け単位計算システムDENtaku</h1>
+  <h2>●使い方●</h2>
+  <h3>
+    ・取得済みの単位をクリックする。
+  </h3>
+  <h3>
+    ・間違えた(取り消したいときは)もう一回クリックする。
+  </h3>
+  <h3>
+    ・表から残りの単位を確認する。
+  </h3>
+  <h3>
+    ・学際地域以外や集中講など,この表にないものはその他
+  </h3>
+  <h3>
+    　を有効利用してください。
+  </h3>
+  <h3  class="title-underline">
+    ・最終的に残りが"-2"になっていればOKです。(自由単位があるので)
+  </h3>
+  <br>
+  <table border="1">
+    <tr>
+      <th>科目区分</th>
+      <th>必要単位</th>
+      <th>取得単位</th>
+      <th>残りの単位数</th>
+    </tr>
+    <tr>
+      <td>必修英語</td>
+      <td>4</td>
+      <td id="count1">0</td>
+      <td id="count_n1">4</td>
+    </tr>
+    <tr>
+      <td>新セミ</td>
+      <td>1</td>
+      <td id="count2">0</td>
+      <td id="count_n2">1</td>
+    </tr>
+    <tr>
+      <td>情報処理</td>
+      <td>2</td>
+      <td id="count3">0</td>
+      <td id="count_n3">2</td>
+    </tr>
+    <tr>
+      <td>フィールドワーク</td>
+      <td>2</td>
+      <td id="count4">0</td>
+      <td id="count_n4">2</td>
+    </tr>
+    <tr>
+      <td>キャリデザ</td>
+      <td>1</td>
+      <td id="count5">0</td>
+      <td id="count_n5">1</td>
+    </tr>
+    <tr>
+      <td>個別分野(人文)</td>
+      <td>8</td>
+      <td id="count6">0</td>
+      <td id="count_n6">8</td>
+    </tr>
+    <tr>
+      <td>学際(地域)</td>
+      <td>2</td>
+      <td id="count7">0</td>
+      <td id="count_n7">2</td>
+    </tr>
+    <tr>
+      <td>教養選択</td>
+      <td>6</td>
+      <td id="count8">0</td>
+      <td id="count_n8">6</td>
+    </tr>
+    <tr>
+      <td>専門科目(概論含む)</td>
+      <td>98</td>
+      <td id="count9">0</td>
+      <td id="count_n9">98</td>
+    </tr>
+  </table>
+  <header></header>
+  <main>
+    <section>
+      <div class="sectionWrapper chart">
+        <ul>
+          <li>
+            <button>理系基礎科目</button>
+            <ul>
+              <li>
+                <button id="id_1">工学基礎科学Ⅰ</button>
+                <ul>
+                  <li>
+                    <button id="id_2">工学基礎科学Ⅱ</button>
+                    <ul>
+                      <li><button>対象教科無し</button>
                         <ul>
-                            <li><button id="id_16">応用数学Ⅳ</button></li>
+                          <li><button id="id_3">熱統計力学</button>
+                            <ul>
+                              <li><button id="id_4">インターンシップ(どちらか一方のみ選択)</button>
+                                <ul>
+                                  <li><button id="id_5">インターンシップ</button>
+                                  <li><button id="id_6">電気電子英語</button>
+                                    <ul>
+                                      <li><button id="id_7">技術者倫理</button>
+                                      </li>
+                                      <li><button id="id_8">経営システム工学</button>
+                                      </li>
+                                      <li>
+                                        <button id="id_9">技術とマネジメント</button>
+                                      </li>
+                                      <li>
+                                        <button id="id_10">安全工学</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
-                    </li>
-                        <li><button id="id_17">応用数学Ⅱ</button>
-                          <ul>
-                            <li><button id="id_18">応用数学Ⅴ</button></li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button id="id_11">微分積分学Ⅰ</button>
+            <ul>
+              <li><button id="id_12">微分積分学Ⅱ</button></li>
+            </ul>
+          </li>
+          <li>
+            <button id="id_13">線形代数学Ⅰ</button>
+            <ul>
+              <li>
+                <button id="id_14">線形代数学Ⅱ</button>
+                <ul>
+                  <li><button id="id_15">応用数学Ⅰ</button>
+                    <ul>
+                      <li><button id="id_16">応用数学Ⅳ</button></li>
+                    </ul>
+                  </li>
+                  <li><button id="id_17">応用数学Ⅱ</button>
+                    <ul>
+                      <li><button id="id_18">応用数学Ⅴ</button></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button id="id_19">
+              　力学波動Ⅰ
+            </button>
+            <ul>
+              <li>
+                <button id="id_20">
+                  力学波動Ⅱ
+                </button>
+                <ul>
+                  <li>
+                    <button id="id_21">
+                      現代物理
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button id="id_22">工学基礎実習</button>
+            <ul>
+              <li>
+                <button id="id_23">創造教育実習</button>
+                <ul>
+                  <li>
+                    <button id="id_24">物理・化学実験</button>
+                    <ul>
+                      <li>
+                        <button id="id_25">エネルギー電子制御実験Ⅰ</button>
+                        <ul>
+                          <li>
+                            <button id="id_26">エネルギー電子制御実験Ⅱ</button>
+                            <ul>
+                              <li>
+                                <button id="id_27">エネルギー電子制御実験Ⅲ</button>
+                                <ul>
+                                  <li><button id="id_28">セミナー</button>
+                                  </li>
+                                  <li><button id="id_29">卒業研究(通年)</button>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <button id="id_19">
-                  　力学波動Ⅰ
-                  </button>
-                  <ul>
-                    <li>
-                      <button id="id_20">
-                        力学波動Ⅱ
-                      </button>
-                      <ul>
-                        <li>
-                          <button id="id_21">
-                            現代物理
-                          </button>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <button id="id_22">工学基礎実習</button>
-                  <ul>
-                    <li>
-                      <button id="id_23">創造教育実習</button>
-                      <ul>
-                        <li>
-                          <button id="id_24">物理・化学実験</button>
-                          <ul>
-                            <li>
-                              <button id="id_25">エネルギー電子制御実験Ⅰ</button>
-                              <ul>
-                                <li>
-                                  <button id="id_26">エネルギー電子制御実験Ⅱ</button>
-                                  <ul>
-                                    <li>
-                                      <button id="id_27">エネルギー電子制御実験Ⅲ</button> 
-                                      <ul>
-                                        <li><button id="id_28">セミナー</button>
-                                    </li>
-                                        <li><button id="id_29">卒業研究(通年)</button>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-    <header></header>
-    <main>
-      <section>
-        <div class="sectionWrapper chart">
-          <ul>
-            <li>
-              <button>専門科目</button>
-              <ul>
-                <li>
-                  <button id="id_30">論理回路Ⅰ</button>
-                  <ul>
-                    <li><button id="id_31">論理回路Ⅱ</button>
-                      <ul>
-                        <li><button id="id_32">電子回路Ⅰ</button>
-                          <ul>
-                            <li><button id="id_33">電子回路Ⅱ</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button id="id_0">電気電子工学概論</button>
+            <ul>
+              <li>
+                <button id="id_64">他学科概論</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <header></header>
+  <main>
+    <section>
+      <div class="sectionWrapper chart">
+        <ul>
+          <li>
+            <button>専門科目</button>
+            <ul>
+              <li>
+                <button id="id_30">論理回路Ⅰ</button>
+                <ul>
+                  <li><button id="id_31">論理回路Ⅱ</button>
+                    <ul>
+                      <li><button id="id_32">電子回路Ⅰ</button>
+                        <ul>
+                          <li><button id="id_33">電子回路Ⅱ</button>
                             <ul>
                               <li>
                                 <button id="id_34">電子回路ハードウェア</button>
@@ -257,19 +274,115 @@
                                         <button id="id_36">電気電子材料工学</button>
                                       </li>
                                     </ul>
-                                    <li>
-                                      <button id="id_37">ロボット工学</button>
-                                      <li>
-                                        <button id="id_38">電子組み込みシステム</button>
-                                      </li>
-                                    </li>
+                                  <li>
+                                    <button id="id_37">ロボット工学</button>
+                                  <li>
+                                    <button id="id_38">電子組み込みシステム</button>
                                   </li>
-                                </ul>
-                                <li>
-                                  <button id="id_39">集積電子回路</button>
-                                </li>
                               </li>
-                            </ul>
+                          </li>
+                        </ul>
+                      <li>
+                        <button id="id_39">集積電子回路</button>
+                      </li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>
+          <button id="id_40">電気電子情報数学</button>
+          <ul>
+            <li><button id="id_41">電気回路Ⅰ</button>
+              <ul>
+                <li><button id="id_42">電気回路Ⅱ</button>
+                  <ul>
+                    <li><button id="id_43">応用電気回路</button>
+                      <ul>
+                        <li>
+                          <button id="id_44">過渡現象</button>
+                          <ul>
+                            <li>
+                              <button id="id_45">電気エネルギー工学Ⅰ</button>
+                              <ul>
+                                <li>
+                                  <button id="id_46">電気エネルギー工学Ⅱ</button>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        <li>
+                          <button id="id_47">制御工学Ⅰ</button>
+                          <ul>
+                            <li>
+                              <button id="id_48">制御工学Ⅱ</button>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                  </ul>
+                </li>
+                　
+              </ul>
+            </li>
+            　
+          </ul>
+        </li>
+        <li><button id="id_49">電磁気学Ⅰ</button>
+          <ul>
+            <li><button id="id_50">電磁気学Ⅱ</button>
+              <ul>
+                <li><button id="id_51">電磁波工学</button>
+                  <ul>
+                    <li>
+                      <button id="id_52">電磁エネルギー変換工学</button>
+                      <ul>
+                        <li>
+                          <button id="id_53">パワーエレクトロニクス</button>
+                        <li>
+                          <button id="id_54">高電圧工学</button>
+                          <ul>
+                            <li>
+                              <button id="id_55">電気法規</button>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            　
+          </ul>
+        </li>
+        　</ul>
+        </li>
+        </ul>
+        </li>
+        <li>
+          <button id="id_56">情報処理</button>
+          <ul>
+            <li>
+              <button>該当教科無し</button>
+              <ul>
+                <li><button id="id_57">プログラミング</button>
+                  <ul>
+                    <li><button>該当教科無し</button>
+                      <ul>
+                        <li>
+                          <button id="id_58">ディジタルコンピューティング</button>
+                          <ul>
+                            <li>
+                              <button>該当教科無し</button>
+                              <ul>
+                                <li>
+                                  <button id="id_59">電気電子製図</button>
+                                </li>
+                              </ul>
                             </li>
                           </ul>
                         </li>
@@ -277,134 +390,388 @@
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <button id="id_40">電気電子情報数学</button>
+                <li><button>該当教科無し</button>
                   <ul>
-                    <li><button id="id_41">電気回路Ⅰ</button>
+                    <li><button id="id_60">電気電子計測</button>
                       <ul>
-                        <li><button id="id_42">電気回路Ⅱ</button>
+                        <li>
+                          <button id="id_61">ディジタル信号処理</button>
+                        <li>
+                          <button id="id_62">確率統計</button>
                           <ul>
-                            <li><button id="id_43">応用電気回路</button>
+                            <li>
+                              <button>
+                                該当教科無し
+                              </button>
                               <ul>
                                 <li>
-                                  <button id="id_44">過渡現象</button>
-                                  <ul>
-                                    <li>
-                                      <button id="id_45">電気エネルギー工学Ⅰ</button>
-                                      <ul>
-                                      <li>
-                                        <button id="id_46">電気エネルギー工学Ⅱ</button>
-                                      </li>
-                                    </ul>
-                                    </li>
-                                  </ul>
-                                  <li>
-                                    <button id="id_47">制御工学Ⅰ</button>
-                                    <ul>
-                                      <li>
-                                        <button id="id_48">制御工学Ⅱ</button>
-                                      </li>
-                                    </ul>
-                                  </li>
+                                  <button id="id_63">ネットワーク工学</button>
                                 </li>
                               </ul>
                             </li>
-                        　</ul>
-                      </li>
-                    　</ul>
-                  </li>
-                    <li><button id="id_49">電磁気学Ⅰ</button>
-                      <ul>
-                        <li><button id="id_50">電磁気学Ⅱ</button>
-                          <ul>
-                            <li><button id="id_51">電磁波工学</button>
-                              <ul>
-                              <li>
-                                <button id="id_52">電磁エネルギー変換工学</button>
-                                <ul>
-                                  <li>
-                                    <button id="id_53">パワーエレクトロニクス</button>
-                                    <li>
-                                      <button id="id_54">高電圧工学</button>
-                                      <ul>
-                                        <li>
-                                          <button id="id_55">電気法規</button>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                            </li>
-                        　</ul>
-                      </li>
-                    　</ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <button id="id_56">(情報処理)</button>
-                  <ul>
-                    <li>
-                      <button>該当教科無し</button>
-                      <ul>
-                        <li><button id="id_57">プログラミング</button>
-                        <ul>
-                            <li><button>該当教科無し</button>
-                              <ul>
-                                <li>
-                                  <button id="id_58">ディジタルコンピューティング</button>
-                                  <ul>
-                                    <li>
-                                      <button>該当教科無し</button>
-                                      <ul>
-                                        <li>
-                                          <button id="id_59">電気電子製図</button>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                        </ul>
-                    </li>
-                        <li><button>該当教科無し</button>
-                          <ul>
-                            <li><button id="id_60">電気電子計測</button>
-                              <ul>
-                                <li>
-                                  <button id="id_61">ディジタル信号処理</button>
-                                  <li>
-                                    <button id="id_62">確率統計</button>
-                                    <ul>
-                                    <li>
-                                      <button>
-                                        該当教科無し
-                                      </button>
-                                      <ul>
-                                        <li>
-                                          <button id="id_63">ネットワーク工学</button>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                  </li>
-                                </li>
-                              </ul></li>
-                        </ul>
+                          </ul>
                         </li>
-                      </ul>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+  <header></header>
+  <main>
+    <section>
+      <div class="sectionWrapper chart">
+        <ul>
+          <li>
+            <button>専門科目</button>
+            <ul>
+              <li>
+                <button id="id_65">新セミ</button>
+                <ul>
+                  <li>
+                    <button id="id_66">教養人文2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_67">教養人文2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_68">教養人文2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_69">教養人文2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_70">教養人文2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_71">教養人文2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_72">教養人文2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_73">教養人文2単位</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_74">教養科学2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_75">教養科学2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_76">教養科学2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_77">教養科学2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_78">教養科学2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_79">教養科学2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_80">教養科学2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_81">教養科学2単位</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button>該当科目無し</button>
+                <ul>
+                  <li>
+                    <button>該当科目無し</button>
+                    <ul>
+                      <li>
+                        <button id="id_82">キャリアデザイン</button>
+                        <ul>
+                          <li>
+                            <button id="id_83">アカデミックイングリッシュⅠ</button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button id="id_84">英語コミュニケーション</button>
+                <ul>
+                  <li>
+                    <button id="id_85">英語2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_86">外国語2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_87">外国語2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_88">外国語2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_89">外国語2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_90">外国語2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_91">英語2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_92">外国語2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_93">外国語2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_94">外国語2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_95">外国語2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_96">外国語2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_97">英語1単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_98">外国語1単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_99">外国語1単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_100">外国語1単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_101">外国語1単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_102">外国語1単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_103">英語1単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_104">外国語1単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_105">外国語1単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_106">外国語1単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_107">外国語1単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_108">外国語1単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button id="id_109">英語演習Ⅰ</button>
+                <ul>
+                  <li>
+                    <button>該当教科無し</button>
+                    <ul>
+                      <li>
+                        <button id="id_110">学際(地域)2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_111">学際(地域)2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_112">学際(地域)2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_113">学際(地域)2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_114">学際(地域)2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_115">その他2単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_116">その他2単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_117">その他2単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_118">その他2単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_119">その他2単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_120">その他2単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_121">その他1単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_122">その他1単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_123">その他1単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_124">その他1単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_125">その他1単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_126">その他1単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button id="id_127">その他1単位</button>
+                    <ul>
+                      <li>
+                        <button id="id_128">その他1単位</button>
+                        <ul>
+                          <li>
+                            <button id="id_129">その他1単位</button>
+                            <ul>
+                              <li>
+                                <button id="id_130">その他1単位</button>
+                                <ul>
+                                  <li>
+                                    <button id="id_131">その他1単位</button>
+                                    <ul>
+                                      <li>
+                                        <button id="id_132">その他1単位</button>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
