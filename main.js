@@ -802,7 +802,7 @@ window.onload = function () {
             flag[56] = 0;
         }
         count3_disp.innerHTML = count3_value;
-        count3_now.innerHTML = 2- count3_value;
+        count3_now.innerHTML = 2 - count3_value;
     }
     count57_up_btn.onclick = function () {
         if (flag[57] === 0) {
@@ -2300,82 +2300,82 @@ window.onload = function () {
         }
 
     }
-count81_up_btn.onmousedown = function () {
-    if (flag[81] === 0) {
-        count81_up_btn.style.backgroundColor = "#00FF00";
-    } else {
-        count81_up_btn.style.backgroundColor = "";
-    }
+    count81_up_btn.onmousedown = function () {
+        if (flag[81] === 0) {
+            count81_up_btn.style.backgroundColor = "#00FF00";
+        } else {
+            count81_up_btn.style.backgroundColor = "";
+        }
 
-}
-count82_up_btn.onmousedown = function () {
-    if (flag[82] === 0) {
-        count82_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count82_up_btn.style.backgroundColor = "";
     }
+    count82_up_btn.onmousedown = function () {
+        if (flag[82] === 0) {
+            count82_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count82_up_btn.style.backgroundColor = "";
+        }
 
-}
-count83_up_btn.onmousedown = function () {
-    if (flag[83] === 0) {
-        count83_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count83_up_btn.style.backgroundColor = "";
     }
+    count83_up_btn.onmousedown = function () {
+        if (flag[83] === 0) {
+            count83_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count83_up_btn.style.backgroundColor = "";
+        }
 
-}
-count84_up_btn.onmousedown = function () {
-    if (flag[84] === 0) {
-        count84_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count84_up_btn.style.backgroundColor = "";
     }
+    count84_up_btn.onmousedown = function () {
+        if (flag[84] === 0) {
+            count84_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count84_up_btn.style.backgroundColor = "";
+        }
 
-}
-count85_up_btn.onmousedown = function () {
-    if (flag[85] === 0) {
-        count85_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count85_up_btn.style.backgroundColor = "";
     }
+    count85_up_btn.onmousedown = function () {
+        if (flag[85] === 0) {
+            count85_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count85_up_btn.style.backgroundColor = "";
+        }
 
-}
-count86_up_btn.onmousedown = function () {
-    if (flag[86] === 0) {
-        count86_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count86_up_btn.style.backgroundColor = "";
     }
-}
-count87_up_btn.onmousedown = function () {
-    if (flag[87] === 0) {
-        count87_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count87_up_btn.style.backgroundColor = "";
+    count86_up_btn.onmousedown = function () {
+        if (flag[86] === 0) {
+            count86_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count86_up_btn.style.backgroundColor = "";
+        }
     }
-}
-count88_up_btn.onmousedown = function () {
-    if (flag[88] === 0) {
-        count88_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count88_up_btn.style.backgroundColor = "";
+    count87_up_btn.onmousedown = function () {
+        if (flag[87] === 0) {
+            count87_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count87_up_btn.style.backgroundColor = "";
+        }
     }
+    count88_up_btn.onmousedown = function () {
+        if (flag[88] === 0) {
+            count88_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count88_up_btn.style.backgroundColor = "";
+        }
 
-}
-count89_up_btn.onmousedown = function () {
-    if (flag[89] === 0) {
-        count89_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count89_up_btn.style.backgroundColor = "";
     }
+    count89_up_btn.onmousedown = function () {
+        if (flag[89] === 0) {
+            count89_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count89_up_btn.style.backgroundColor = "";
+        }
 
-}
-count90_up_btn.onmousedown = function () {
-    if (flag[90] === 0) {
-        count90_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
-    } else {
-        count90_up_btn.style.backgroundColor = "";
     }
+    count90_up_btn.onmousedown = function () {
+        if (flag[90] === 0) {
+            count90_up_btn.style.backgroundColor = "#00FF00";　//それぞれのクリック判定
+        } else {
+            count90_up_btn.style.backgroundColor = "";
+        }
     }
     count91_up_btn.onmousedown = function () {
         if (flag[91] === 0) {
@@ -2383,7 +2383,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count91_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count92_up_btn.onmousedown = function () {
         if (flag[92] === 0) {
@@ -2391,7 +2391,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count92_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count93_up_btn.onmousedown = function () {
         if (flag[93] === 0) {
@@ -2399,7 +2399,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count93_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count94_up_btn.onmousedown = function () {
         if (flag[94] === 0) {
@@ -2407,7 +2407,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count94_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count95_up_btn.onmousedown = function () {
         if (flag[95] === 0) {
@@ -2415,7 +2415,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count95_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count96_up_btn.onmousedown = function () {
         if (flag[96] === 0) {
@@ -2437,7 +2437,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count98_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count99_up_btn.onmousedown = function () {
         if (flag[99] === 0) {
@@ -2445,7 +2445,7 @@ count90_up_btn.onmousedown = function () {
         } else {
             count99_up_btn.style.backgroundColor = "";
         }
-    
+
     }
     count100_up_btn.onmousedown = function () {
         if (flag[100] === 0) {
@@ -2709,5 +2709,5 @@ count90_up_btn.onmousedown = function () {
         }
 
     }
-    
+
 };
